@@ -1,169 +1,29 @@
-
-body{
-    font-family: 'Arimo', sans-serif;
-}
-.buttom{
-    background-color: azure;
-    height: 30px;
-    width: 120px;
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.buttoms{
-    display: flex;
-    flex-wrap: wrap;
-    gap:10px
-}
-.container{
-    display: grid;
-    flex-wrap: wrap;
-    grid-template-rows: 2.5fr 1fr 1.5fr 1.5fr 1fr;
-    grid-template-columns: auto;
-}
-.title{
-    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
-animation: gradient-animation 18s ease infinite;
-}
-.title-content{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.title-content > .text{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-right: 8rem;
-}
-p{
-    margin-left: 3px;
-}
-.picture > img{
-    padding: 0px;
-    padding-top: 5rem;
-    margin: 0;
-}
-.features{
-    padding-top: 3rem;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 3rem;
-    
-}
-.item{
-    width: 200px;
-}
-.item > svg{
-    float: left;
-}
-.item > h3{
-    margin: 0;
-    margin-left: 4rem;
-}
-.testeminial{
-    background-color: rgb(248, 249, 250);
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 3rem;
-}
-.text-image{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.myimg{
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-}
-.logos{
-    display: flex;
-    flex-wrap: wrap;
-    gap:15rem
-}
-.logos > img{
-    height: 50px;
-    width: 90px;
-}
-.text > h1{
-    font-size: 3rem;
-    width: 500px;
-}
-.pr-box{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.pb{
-    background-color: black;
-    color: white;
-    margin-top: 35px;
-    margin-bottom: 35px;
-}
-.top-card{
-    border: 1px solid black;
-    border-radius: 10px 10px 0 0 ;
-    text-align: center;
-
-}
-.buttom-card{
-    border: 1px solid black;
-    border-radius: 0 0 10px 10px;
-    border-top: 0px;
-    text-align: center;
-}
-.price > h3{
-    margin-top: 0;
-    padding: 0;
-}
-.price-details{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.price-details > p{
-    margin: 0;
-    padding: 0;
-
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
 }
 
-.cards{
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap:5rem;
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-.pr-title{
-    text-align: center;
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
 }
-.card{
-    width: 400px;
-    height: 320px;
-}
-@media (max-width:768px){
-    .title-content{
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .features{
-        flex-direction: column;
-        gap:3rem;
-        align-items: center;
-        
-    }
+
+.profile-img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
 }
